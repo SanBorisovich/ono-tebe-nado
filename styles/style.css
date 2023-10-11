@@ -49,12 +49,15 @@
 /* Баннер */
 
 .jambotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  height: 757px;
-  padding-top: 165px;
-  
+  background-position: center ;
+  min-height: 757px;
+  padding: 165px 50px 50px;
 }
 
 .banner_background {
@@ -63,39 +66,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-}
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 135px;
-  gap: 20px;
-}
-
-.banner_first {
-  text-align: start;
-}
-
-.banner_second {
-  text-align: center;
-  margin-left: -30px;
-}
-
-.banner_third {
-  text-align: end;
-}
-
-.banner__text-first {
-  position: relative;
-  font-size: 100px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  line-height: 115%;
-  letter-spacing: 30px;
-  margin-right: -30px;
+  left: 0;
 }
 
 .banner__text {
@@ -109,16 +80,36 @@
   margin-right: -30px;
 }
 
-.banner_bottom {
+.banner_start {
+  position: relative;
+  display: block;
+  text-align: start;
+  line-height: 115%;
+}
+
+.banner_center {
+  display: block;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner_end {
+  display: block;
+  text-align: end;
+}
+
+.cover__description {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: end;
   align-items: center;
-  padding: 0 50px;
+  
 }
 
-.banner_button {
+.bet-button {
   border: 1px solid #fff;
   width: 257px;
   height: 52px;
@@ -126,7 +117,6 @@
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
-  overflow: hidden;
   outline: none;
   justify-items: center;
   font-size: 22px;
@@ -136,19 +126,16 @@
   color: #fff;
 }
 
-.pdp {
-  white-space: pre;
-}
-
-.banner_bottom_text {
+.cover__description-text {
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
+  word-spacing: 17px;
 }
 
-.banner__texttwo {
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
@@ -185,6 +172,15 @@
   flex: 1;
   min-width: 430px;
   min-height: 450px;
+}
+
+.cards_link {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .cards_background {
@@ -292,11 +288,10 @@
 
 .socials {
   display: flex;
-  justify-content: space-between;
   justify-self: end;
-  width: 240px;
 }
 
 .socials_link_img {
   width: 48px;
+  margin-left: 48px;
 }

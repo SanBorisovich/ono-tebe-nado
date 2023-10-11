@@ -24,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <a class="logo">
+      <a href="#" class="logo">
         <img class="logo__image" src="./images/logo-black.svg" />
       </a>
       <address class="info">
@@ -36,54 +36,54 @@
     <main>
       <section class="jambotron">
         <div class="banner_background"></div>
-        <div class="banner">
-          <div class="banner_first">
-            <h1 class="banner__text-first">
-              о<span class="banner__texttwo">но</span>
-            </h1>
-          </div>
-          <div class="banner_second">
-            <h1 class="banner__text">
-              те<span class="banner__texttwo">бе</span>
-            </h1>
-          </div>
-          <div class="banner_third">
-            <h1 class="banner__text">
-              <span class="banner__texttwo">н</span>адо
-            </h1>
-          </div>
+        <div>
+          <h1 class="banner__text">
+            <span class="banner_start">
+              о<span class="letter-spacing-extended">но</span>
+            </span>
+            <span class="banner_center">
+              те<span class="letter-spacing-extended">бе</span>
+            </span>
+            <span class="banner_end">
+              <span class="letter-spacing-extended">н</span>адо
+            </span>
+          </h1>
         </div>
-        <div class="banner_bottom">
-          <p class="banner_bottom_text">
-            Аукцион<span class="pdp">    </span>вещей,<span class="pdp">    </span
-            >в<span class="pdp">    </span>которые<span class="pdp">    </span
-            >никто<span class="pdp">    </span>не<span class="pdp">    </span>верил
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
           </p>
-            <button class="banner_button">сделай ставку</button>
+          <button class="bet-button" type="button">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots_title" id="lots">лоты</h2>
         <div class="content">
           <article class="cards">
-            <img class="cards_background" src="./images/card-lot-01.jpg" alt="лот номер 1"/>
-            <a href="#" class="cards_title">
+            <a href="#" class="cards_link"></a>
+            <img
+              class="cards_background"
+              src="./images/card-lot-01.jpg"
+              alt="лот номер 1"
+            />
+            <h2 class="cards_title">
               Фильм режиссёра, который бросил киношколу
-            </a>
+            </h2>
             <p class="cards_text">
               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
               ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
           </article>
           <article class="cards">
+            <a href="#" class="cards_link"></a>
             <img
               class="cards_background"
               src="./images/card-lot-02.jpg"
               alt="лот 1"
             />
-            <a href="#" class="cards_title">
+            <h2 class="cards_title">
               Книга, где описан один скучный день из жизни рекламного агента
-            </a>
+            </h2>
             <p class="cards_text">
               Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
               переходами на древнеанглийский. В ней одновременно рассказывается
@@ -93,14 +93,15 @@
             </p>
           </article>
           <article class="cards">
+            <a href="#" class="cards_link"></a>
             <img
               class="cards_background"
               src="./images/card-lot-03.jpg"
               alt="лот 1"
             />
-            <a href="#" class="cards_title">
+            <h2 class="cards_title">
               Картина, которую повторит даже 5-летний сын маминой подруги
-            </a>
+            </h2>
             <p class="cards_text">
               Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
               похожее на инфузорию-туфельку. Никаких полей, лесов, котиков…
@@ -111,7 +112,7 @@
         </div>
         <a href="#" class="lots_button">посмотреть больше</a>
       </section>
-      <div class="about" id="about">
+      <section class="about" id="about">
         <div class="about_logo">
           <img
             class="about_logo_img"
@@ -137,14 +138,12 @@
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
           </p>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <address class="footer_info">
         <a class="info__contact" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="info__contact" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
+        <a class="info__contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer_nav">
